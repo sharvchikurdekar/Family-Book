@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+    <body>
+        <h1>My Family Book</h1>
+
+        <img src="https://us.123rf.com/450wm/kakigori/kakigori1903/kakigori190300038/121617430-extended-family-sitting-on-couch-smiling-happy-together.jpg?ver=6"
+        style="width: 500px" id="family_member_image"> 
+        <button onclick="update();">Next</button>
+    </body> 
+    <script>
+        var images =
+["https//us.123rf.com/450wm/kakigori/kakigori1903/kakigori190300038/121617430-extended-family-sitting-on-couch-smiling-happy-together.jpg?ver=6",
+"https://i.pinimg.com/originals/01/9b/90/019b90b5f8f04e00e0c7b104da92a67a.jpg","https://st.depositphotos.com/1724125/950/v/950/depositphotos_26930203-stock-illustration-cartoon-dad.jpg",
+"https://w7.pngwing.com/pngs/96/861/png-transparent-boy-cartoon-child-hat-boy-painted-hand-toddler-thumbnail.png",
+"https://image.similarpng.com/very-thumbnail/2020/07/Happy-boy-cartoon-on-transparent-background-PNG.png"];
+ 
+
+var names  = ["Family Book","Harshada Chikurdekar","Sudhir Chikurdekar","Aditya Chikudekar","Sharv Chikurdekar"];
+
+
+var i = 0;
+function update()
+{
+    i++;
+    var numbers_of_family_member_in_array = 4
+    if(i > numbers_of_family_member_in_array )
+    {
+        i = 0;
+    }
+    var updateImage = images[i]
+    var updateName = names[i]
+    document.getElementById("family_member_image").src = updateImage;
+    document.getElementById("family_member_name").innerHTML = updateName;   
+}
+
+
+
+
+ </script>
+
+
+</html>
+  
